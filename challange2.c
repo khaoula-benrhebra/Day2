@@ -8,7 +8,7 @@ scanf("%d",&N);
 printf("veuillez entrer les elements de votre tableau: \n");
 for(i=0;i<N;i++)
 {
-    printf("T[%d]= ",i);
+    printf("T[%d]= ",i) ;
     scanf("%d",&T[N]);
 }
 return 0;

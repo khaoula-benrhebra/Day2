@@ -52,7 +52,7 @@ void MettreAjrQuantite() {
     {
         nbrtotal+=QUNTT[i];
     }
-    printf("le nbr totale de ce livre en stock:%d",nbrtotal);
+    printf("le nbr  totale de ce livre en stock:%d",nbrtotal);
 }
 int main(){
     int choix;

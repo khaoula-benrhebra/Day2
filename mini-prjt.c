@@ -31,10 +31,13 @@ void afficherLivres() {
                TITRES[i], AUTEUR[i], PRIX[i], QUNTT[i]);
     }
 }
-void MettreAjrQuantite() {
-    char titre[30];
+void Chercherunlivre()
+{
+char titre[30];
     printf("Entrez le titre du livre à mettre à jour :");
     scanf(" %s",titre);
+}
+void MettreAjrQuantite() {
     for (int i = 0; i < nbrLivres; i++) {
         if (strcmp(TITRES[i], titre) == 0) {
             printf("Quantité actuelle : %d\n", QUNTT[i]);

@@ -20,7 +20,7 @@ void ajouterLivre() {
         printf("Quantité en stock :");
         scanf("%d",&QUNTT[nbrLivres]);
         nbrLivres++;
-        printf("VOUS AVEZ AJOUTER UN LIVRE");
+        printf("VOUS AVEZ AJOUTER UN LIVRE \n");
     } else 
         printf("Stock plein, impossible d'ajouter un livre"); 
 }
@@ -31,19 +31,20 @@ void afficherLivres() {
                TITRES[i], AUTEUR[i], PRIX[i], QUNTT[i]);
     }
 }
-void Chercherunlivre()
+/*void Chercherunlivre()
 {
-char titre[30];
-    printf("Entrez le titre du livre à mettre à jour :");
-    scanf(" %s",titre);
-}
+
+}*/
 void MettreAjrQuantite() {
+    char titre[30];
+    printf("Entrez le titre du livre à meTtre à jour :");
+    scanf(" %[^\n]",titre);
     for (int i = 0; i < nbrLivres; i++) {
         if (strcmp(TITRES[i], titre) == 0) {
             printf("Quantité actuelle : %d\n", QUNTT[i]);
             printf("Entrez une nouvelle quantité : ");
             scanf("%d", &QUNTT[i]);
-            printf("Quantité mise à jour avec succès");
+            printf("Quantité mise à jour avec succès\n");
             return;
         }
     }
@@ -57,7 +58,8 @@ void MettreAjrQuantite() {
     }
     printf("le nbr  totale de ce livre en stock:%d",nbrtotal);
 }
-int main(){
+int main()
+{
     int choix;
     do
     {
@@ -79,10 +81,10 @@ int main(){
         case 3:
         MettreAjrQuantite();
         break;
-    case 4 :
-    AffNbrTotaleDeLlivres();
-    break;
-    default:
+     case 4 :
+      AffNbrTotaleDeLlivres();
+       break;
+     default:
     printf("votre choix n exixte pas ");
         break;
     }

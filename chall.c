@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int i, j, nondoub, T[5] = {2, 4, 5, 5, 9}, copie[5];
+    int i, j, nondoub, T[5] = {2, 4, 5, 2, 2}, copie[5];
     int taillecopie = 0;
     printf("le 1er tableau :\n");
     for(i = 0; i < 5; i++) {

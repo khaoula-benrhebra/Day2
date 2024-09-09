@@ -57,17 +57,21 @@ void MettreAjrQuantite() {
         nbrtotal+=QUNTT[i];
     }
     printf("le nbr  totale de ce livre en stock:%d",nbrtotal);
+   
 }
 int main()
 {
     int choix;
+    
     do
     {
+          
       printf("menu du bibliotheque :\n");
       printf("1-Ajouter un livre au stock\n");
       printf("2-Mettre à jour la quantité d'un livre ET Rechercher un livre par son titre\n");
       printf("3-Ajouter un livre au stock\n");
       printf("4-Afficher le nombre total de livres en stock\n");
+      start:
       printf("quelle est votre choix ??");
       scanf("%d",&choix);
     switch (choix)
@@ -84,9 +88,8 @@ int main()
      case 4 :
       AffNbrTotaleDeLlivres();
        break;
-     default:
-    printf("votre choix n exixte pas ");
-        break;
+     default: 
+     goto start;
     }
     } while (choix!=0);
     return 0;

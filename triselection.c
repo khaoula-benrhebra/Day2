@@ -8,7 +8,7 @@ for ( i = 0; i <6; i++)
 {
    for ( j = i+1; j < 6; j++)
    {
-    if(T[i]>T[j])  ///if(T[i]<T[j]) ///if(T[i]>T[j])
+     if(T[i]>T[j])  ///if(T[i]<T[j]) ///if(T[i]>T[j])
    {  temp=T[i];
    T[i]=T[j];
    T[j]=temp; }
